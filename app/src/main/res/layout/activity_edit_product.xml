@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProduct">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter product ID and press search"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/red"/>
+
+    <TextView
+        android:id="@+id/IDText"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="70dp"
+        android:text="ID: "
+        android:layout_alignLeft="@id/editGrid"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/IDbox"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_toRightOf="@id/IDText"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="65dp"
+        android:inputType="number"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/searchBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:text="Search"
+       android:layout_toRightOf="@id/IDbox"
+        android:layout_marginLeft="25dp"/>
+
+
+
+
+    <GridLayout
+        android:id="@+id/editGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="8"
+       android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/IDbox">
+
+
+        <TextView
+            android:id="@+id/prodLabel_Edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item Description:"
+            android:paddingRight="10dp"/>
+
+        <EditText
+            android:id="@+id/prodTB_Edit"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            />
+
+
+        <TextView
+            android:id="@+id/catLabel_Edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category:"
+            android:paddingRight="10dp"
+            android:layout_gravity="center_vertical"/>
+
+
+        <Spinner
+            android:id="@+id/catTB_Edit"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:background="@android:drawable/btn_dropdown"
+            android:layout_gravity="center"
+            android:prompt="@string/category_prompt"
+            />
+
+        <TextView
+            android:id="@+id/totBoughtLabel_Edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Purchased:"
+            android:paddingRight="10dp"/>
+
+        <EditText
+            android:id="@+id/totBoughtTB_Edit"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            />
+
+
+        <TextView
+            android:id="@+id/totPriceLabel_Edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Price:"
+            android:paddingRight="10dp"/>
+
+        <EditText
+            android:id="@+id/totPriceTB_Edit"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
+
+        <TextView
+            android:id="@+id/shopLabel_Edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Supplier:"
+            android:paddingRight="10dp"/>
+
+        <EditText
+            android:id="@+id/shopTB_Edit"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:id="@+id/dateLabel_Edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date Purchased:"
+            android:paddingRight="10dp"/>
+
+        <EditText
+            android:id="@+id/dateTB_Edit"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="date"/>
+
+
+
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editGrid"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/saveProdBtnEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save\n Product" />
+
+        <Button
+            android:id="@+id/backBtnEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back \nto Menu" />
+
+        <Button
+            android:id="@+id/deleteProdBtnEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete\n Product"
+            android:textColor="@color/red"/>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

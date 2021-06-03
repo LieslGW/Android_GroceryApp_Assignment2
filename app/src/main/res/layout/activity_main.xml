@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/gc_logo" />
+
+
+    <TextView
+        android:id="@+id/AppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="100dp"
+        android:text="PURCHASES APP"
+        android:textSize="20sp"
+        android:textColor="@color/red"/>
+
+
+    <TextView
+        android:id="@+id/info1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_instructions"
+       android:layout_below="@+id/AppName"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:paddingHorizontal="30dp"
+        android:textAlignment="center"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="5dp"
+        android:textSize="17sp"/>
+
+    <!--<GridLayout
+        android:id="@+id/grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="3"
+        android:layout_below="@+id/info1"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="100dp"
+        android:paddingHorizontal="5dp">
+
+        <TextView
+            android:text="Number of Members:"/>
+
+        <EditText
+            android:id="@+id/TBnoMembers"
+            android:layout_width="50dp"
+            android:inputType="number"/>
+
+        <TextView
+            android:text="Number of Months:"/>
+
+        <EditText
+            android:id="@+id/TBmonths"
+            android:layout_width="50dp"
+            android:inputType="number"/>
+
+        <TextView
+            android:text="Fees rate per month:"/>
+
+        <EditText
+            android:id="@+id/TBrates"
+            android:layout_width="50dp"
+            android:inputType="number"/>
+
+
+    </GridLayout>
+-->
+
+    <Button
+        android:id="@+id/proceedBtn"
+        android:layout_width="250dp"
+        android:layout_height="65dp"
+        android:text="I Accept"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/info1"
+        android:layout_centerHorizontal="true"/>
+
+
+
+
+
+
+</RelativeLayout>

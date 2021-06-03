@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewProduct">
+
+    <TextView
+        android:id="@+id/NewPurchaseName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter a New Product"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/red" />
+
+    <GridLayout
+        android:id="@+id/grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="8"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/NewPurchaseName">
+
+
+    <TextView
+        android:id="@+id/prodLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item Description:"
+        android:paddingRight="10dp"/>
+
+    <EditText
+        android:id="@+id/prodTB"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        />
+
+
+    <TextView
+    android:id="@+id/catLabel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Category:"
+    android:paddingRight="10dp"
+        android:layout_gravity="center_vertical"/>
+
+    <Spinner
+        android:id="@+id/categoryTB"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:background="@android:drawable/btn_dropdown"
+        android:layout_gravity="center"
+        android:prompt="@string/category_prompt"
+        />
+
+        <TextView
+            android:id="@+id/totBoughtLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Purchased:"
+            android:paddingRight="10dp"/>
+
+        <EditText
+            android:id="@+id/totBoughtTB"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            />
+
+
+        <TextView
+            android:id="@+id/totPriceLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Price:"
+            android:paddingRight="10dp"/>
+
+        <EditText
+            android:id="@+id/totPriceTB"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
+
+        <TextView
+            android:id="@+id/shopLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Supplier:"
+            android:paddingRight="10dp"/>
+
+        <EditText
+            android:id="@+id/shopTB"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:id="@+id/dateLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date Purchased:"
+            android:paddingRight="10dp"/>
+
+        <EditText
+            android:id="@+id/dateTB"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            />
+
+    </GridLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/grid"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true">
+
+    <Button
+        android:id="@+id/saveProdBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Product"
+        />
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to Menu"
+        />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

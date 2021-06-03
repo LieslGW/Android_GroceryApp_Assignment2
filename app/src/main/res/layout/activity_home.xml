@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home"
+    >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/gc_logo"
+       android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+
+    <Button
+        android:id="@+id/BtnNewPurchase"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:text="Add a Product"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp" />
+
+    <Button
+        android:id="@+id/BtnEditProduct"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:text="Edit / Delete a product"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/BtnNewPurchase"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/BtnReports"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:text="Search Reports"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/BtnEditProduct"
+        android:layout_marginTop="10dp"/>
+
+     <!--<Button
+    android:id="@+id/BtnClose"
+    android:layout_width="250dp"
+    android:layout_height="80dp"
+    android:text="Exit App"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@id/BtnReports"
+    android:layout_marginTop="10dp"/>-->
+
+</RelativeLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FilterReports">
+
+    <TextView
+        android:id="@+id/FilterName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filtered Views"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/instructionText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select a category and press GO"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/FilterName"
+        />
+
+    <GridLayout
+        android:id="@+id/catGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_below="@+id/instructionText1"
+        android:layout_marginTop="5dp"
+        android:columnCount="2"
+        android:rowCount="1"
+        android:paddingHorizontal="25dp"
+        android:background="#999999"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true">
+
+    <Spinner
+        android:id="@+id/spinnerCatFilter"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:background="@android:drawable/btn_dropdown"
+        android:layout_gravity="center"
+        android:prompt="@string/category_prompt"
+        android:gravity="center_vertical"
+        />
+
+        <Button
+            android:id="@+id/btnGo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GO"
+            android:layout_gravity="center_vertical"/>
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/instructionText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type in the store name and press GO"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/catGrid"
+        />
+
+    <GridLayout
+        android:id="@+id/storeGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_below="@+id/instructionText2"
+        android:layout_marginTop="5dp"
+        android:columnCount="2"
+        android:rowCount="1"
+        android:paddingHorizontal="25dp"
+        android:background="#999999"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true">
+
+        <EditText
+            android:id="@+id/storeFilter"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:hint="Enter store name here"
+            android:background="#FFFFFF"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/btnGo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GO"
+            android:layout_gravity="center_vertical"/>
+    </GridLayout>
+
+    <Button
+        android:id="@+id/backBtnFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_below="@id/storeGrid"
+       android:layout_marginLeft="225dp"
+        android:layout_marginTop="50dp"/>
+
+
+
+</RelativeLayout>
